@@ -1,0 +1,26 @@
+img {
+    width: 200px;
+    height: 200px;
+    scale: 0.5;
+    rotate: 0deg;
+    transition:  all 0.5s;
+}
+
+
+img:hover {
+    scale: 1;
+    rotate: 180deg;
+}
+
+.color-rotate {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+button {
+    width: 200px;
+    height: 40px;
+}

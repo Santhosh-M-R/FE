@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="temp.css" />
+  </head>
+  <body>
+    <div class="home">
+      <h1>Welcome to javasript!</h1>
+      <div class="color-rotate">
+        <button onclick="changeColor()">
+          click me to change the backgroud color
+        </button>
+        <button onclick="rotate()">click me to rotate below image</button>
+        <img
+          id="image"
+          src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        />
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor =
+        "rgba(" +
+        randomcolor() +
+        "," +
+        randomcolor() +
+        "," +
+        randomcolor() +
+        ")";
+
+      console.log(
+        "rgba(" +
+          randomcolor() +
+          "," +
+          randomcolor() +
+          "," +
+          randomcolor() +
+          ")"
+      );
+    }
+    function randomcolor() {
+      return Math.floor(Math.random() * 255);
+    }
+
+    function rotate() {
+      document.getElementById("image").style.scale = "1";
+      document.getElementById("image").style.rotate = "180deg";
+    }
+  </script>
+</html>
